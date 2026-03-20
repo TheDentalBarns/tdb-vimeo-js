@@ -1467,17 +1467,6 @@
   }
 
   function start() {
-    setTimeout(function () {
-      requestAnimationFrame(function () {
-        const targets = document.querySelectorAll(
-          '.hero-vimeo_background-video-wrapper, .navbar10_logo, .menu-icon5'
-        );
-        targets.forEach(function (el) {
-          el.classList.add('visible');
-        });
-      });
-    }, 300);
-
     heroShells.forEach(function (shell) {
       bindHeroShellControls(shell);
 
